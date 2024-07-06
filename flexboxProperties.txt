@@ -1,0 +1,52 @@
+flex-direction: we use flex-direction to determin the direction of the data in it weather it is row or a column and if it's reversed or not
+some flex-direction values:
+	row "default"
+	row-reversed
+	column
+	column-reverse
+
+
+flex-warp: we use flex-warp to make elements wrap or not if there is enough space for our elements or not
+some flex-wrap values:
+	nowrap "default"
+	wrap
+	wrap-reverse
+
+flex-flow: it's a short hand property that combines flex-direction & flex-wrap to use it alone rather that use them both
+some flex-flow values: 
+	row wrap 
+	column wrap
+	row-reverse wrap
+	coulmn-reverse wrap
+
+justify-content: we use justify-content  to align felx items along the main axis " horizontical axis "
+some justify-content values: 
+	flex-start "default
+	flex-end
+	center
+	space-between
+	space-evenly
+
+
+align-items: we use align-items to align flex items along the cross axis " vertical axis " 
+some align-items values:
+	stretch "default"
+	felx-start
+	flex-end
+	center
+	baseline
+
+
+align-content:we use align-content to align the containers not the content in the container
+some align-content values:
+	strech "default
+	flex-start
+	flex-end
+	space-between
+	space-around
+	space-evenly
+	
+
+
+
+... For all what i said that is in a flex container of course XD using "display: flex" 
