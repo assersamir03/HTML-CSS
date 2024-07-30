@@ -59,7 +59,8 @@
                     event.preventDefault();
                     var R = document.getElementById("circleR").value
                     var thearea = 22/7*R*R
-                    alert(Math.trunc(thearea*100)/100);
+                    var theference  = 2 * 22/7 * R
+                    alert("area: " + Math.trunc(thearea*100)/100 + "\nference: " + Math.trunc(theference*100)/100);
                 }
             </script>
         </form>
