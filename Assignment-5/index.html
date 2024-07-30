@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task</title>
+</head>
+<body>
+        <!--Even or Odd check-->
+        <form onsubmit="even_odd_checker(event)">
+            <input type="number"  id="Even_odd">
+            <button type="submit">check!</button>
+        </form>
+
+        <script>
+            //EVEN_ODD
+            function even_odd_checker(event) {
+                event.preventDefault();
+                var number = document.getElementById("Even_odd").value;
+                if (number%2==0) {
+                    alert(number + " is an Even number")
+                } else {
+                    alert(number + " is an Odd number")
+                }
+            }
+        </script>
+<br>    <br>
+
+
+        <!--Fizz Buzz-->
+        
+        <form onsubmit="fizz_buzz(event)">
+            <input type="number" id="fizz_btn">
+            <button type="submit" >fizz!</button>
+            <script>
+                function fizz_buzz(event) {
+                    event.preventDefault();
+                    var theNumber = document.getElementById("fizz_btn").value
+                    if (theNumber % 5 == 0 && theNumber % 3 == 0 ) {
+                        alert("fizz_buzz")
+                    } else if (theNumber % 5 ==0 && theNumber % 3 != 0){
+                        alert("fizz")
+                    }else if (theNumber % 5 != 0 && theNumber % 3 == 0){
+                        alert("buzz")
+                    }else{
+                        alert(theNumber)
+                    }
+                }
+            </script>
+        </form>
+<br><br>
+
+        <!--circle area-->
+        <form onsubmit="circleArea(event)">
+            <input type="number"  id="circleR" placeholder="enter the R of your circle !">
+            <button type="submit">get the Area</button>
+            <script>
+                function circleArea(event) {
+                    event.preventDefault();
+                    var R = document.getElementById("circleR").value
+                    var thearea = 22/7*R*R
+                    alert(Math.trunc(thearea*100)/100);
+                }
+            </script>
+        </form>
+<br><br>
+
+        <!--positive or negative-->
+        <form onsubmit="PosOrNeg(event)">
+            <input type="number"  id="number-1">
+            <input type="number" id="number-2">
+            <button type="submit">Let's see who is positive and who is negative !</button>
+            <script>
+                function PosOrNeg(event) {
+                    event.preventDefault();
+                    const st_num = document.getElementById("number-1").value;
+                    const nd_num = document.getElementById("number-2").value
+                    if (st_num>=0 && nd_num>=0) {
+                        alert("both are positive!")
+                    } else if (st_num >= 0 && nd_num < 0) {
+                        alert ("first is positive and second is negative!")
+                    } else if (st_num < 0 && nd_num >= 0) {
+                        alert ("second is positive and first is negative!")
+                    } else if (st_num < 0 && nd_num < 0) {
+                        alert ("both are negative!")
+                    }
+                }
+            </script>
+        </form>
+<br><br>
+        <!--2 num sum-->
+        <form onsubmit="theSum(event)">
+            <input type="number"  id="sum-number-1" value="0">
+            <input type="number" id="sum-number-2" value="0">
+            <button type="submit">Let's see the sum !</button>
+            <script>
+                function theSum(event) {
+                    event.preventDefault();
+                    const st_num = parseInt(document.getElementById("sum-number-1").value);
+                    const nd_num = parseInt(document.getElementById("sum-number-2").value);
+                    const res = st_num+nd_num;
+                    alert(st_num + " + " + nd_num +" = " + res)
+                }
+            </script>
+        </form>
+</body>
+</html>
