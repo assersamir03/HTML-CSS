@@ -3,7 +3,7 @@
 function decFact($end){
     $result=0;
     while ($end>=1) {
-        $result +=$end;
+        $result *=$end;
         $end -=1;
     }
     return $result;
